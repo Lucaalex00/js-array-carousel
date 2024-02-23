@@ -46,6 +46,12 @@
 
         }
 
+        img:not(.active) {
+            display: none;
+
+        }
+
+
     }
 
 
