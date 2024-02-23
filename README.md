@@ -25,12 +25,12 @@
 - Dopo aver verificato la funzionalità, rimuoviamo tutto il markup.
     - Utilizziamo un ciclo for dove daremo ad una sola immagine con valore di INDICE PROGRESSIVO DEL CICLO, una classe che la renderà visibile.
     - Avremo le immagini create tramite javascript e non tramite html.
-- Creiamo un addEventListener sul button "arrowRight" per cambiare l'immagine attiva (spostando la classe di "VISIBILITA' ad un altro elemento dell'array) e andare in ordine progressivo a visualizzare tutte le immagini.
+- Creiamo un addEventListener sul button "arrowDown" per cambiare l'immagine attiva (spostando la classe di "VISIBILITA' ad un altro elemento dell'array) e andare in ordine progressivo a visualizzare tutte le immagini.
 
 
 # BONUS
 
-- Diamo le stesse proprietà alla "arrowLeft" mandando in negativo il valore di indice progressivo e mettendo un valore numerico MASSIMO alla array (es: 5).
+- Diamo le stesse proprietà alla "arrowUp" mandando in negativo il valore di indice progressivo e mettendo un valore numerico MASSIMO alla array (es: 5).
 
 -Creiamo un contenitore con position absolute e al padre il position relative, con 5 immagini presenti in colonna sottoforma di button e al 'click' cambia il valore dell'immagine con index(x) in base all'immagine cliccata.
 
