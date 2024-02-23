@@ -27,8 +27,34 @@ for (let i = 0; i < imgList.length; i++) { //CICLO FOR
 } console.log(contentElement); //DEBUG
 
 upArrowElement.addEventListener('click', function () {
-    console.log('su') //DEBUG
+    console.log('su'); //DEBUG
+    activeImg--;
+    const currentImg = document.querySelector('img.active');
+    console.log(currentImg); //DEBUG
+    currentImg.classList.remove('active');
+    const imgGroup = document.querySelectorAll('.content img')
+    console.log(imgGroup); //DEBUG
+    console.log(imgGroup[activeImg]); //DEBUG
+    if (activeImg < 0) { //SE il valore di activeimg è superiore alla lunghezza totale dell'array - 1, ritorna al valore 0 (inizio)
+        activeImg = imgList.length - 1;
+        console.log(activeImg)
+    }
+    imgGroup[activeImg].classList.add('active');
 })
 downArrowElement.addEventListener('click', function () {
-    console.log('giu') //DEBUG
+    console.log('giu'); //DEBUG
+    activeImg++;
+    const currentImg = document.querySelector('img.active');
+    console.log(currentImg); //DEBUG
+    currentImg.classList.remove('active');
+    const imgGroup = document.querySelectorAll('.content img')
+    console.log(imgGroup); //DEBUG
+    console.log(imgGroup[activeImg]); //DEBUG
+    if (activeImg > imgList.length - 1) { //SE il valore di activeimg è superiore alla lunghezza totale dell'array - 1, ritorna al valore 0 (inizio)
+        activeImg = 0;
+        console.log(activeImg) //DEBUG
+    }
+    //aggiungi all'elemento activeImg la classe active per far scrollare le
+    imgGroup[activeImg].classList.add('active');
+
 })
