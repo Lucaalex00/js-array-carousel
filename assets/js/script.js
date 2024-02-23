@@ -1,1 +1,1 @@
-document.writeln('ciao')
+/* document.writeln('ciao') */
